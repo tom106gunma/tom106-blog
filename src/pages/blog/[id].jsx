@@ -1,16 +1,20 @@
 import { client } from '../../libs/client';
+import dayjs from 'dayjs';
 
 const BlogId = ({ blog }) => {
   return (
-    <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <div
+    <div>
+      <h1 className="text-4xl font-bold">{blog.title}</h1>
+      <time dateTime={blog.publishedAt} className="mt-2 block">
+        {dayjs(blog.publishedAt).format('YYYY/MM/DD')}
+      </time>
+      <article
+        className="prose prose-sm mt-4"
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,
         }}
       />
-    </main>
+    </div>
   );
 };
 
