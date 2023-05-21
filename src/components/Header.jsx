@@ -13,6 +13,7 @@ export default function Header() {
           <a
             className="mr-5 hover:text-gray-900"
             href="https://twitter.com/tom106gunma"
+            rel="noreferrer"
             target="_blank"
           >
             Twitter
@@ -20,6 +21,7 @@ export default function Header() {
           <a
             className="mr-5 hover:text-gray-900"
             href="https://github.com/tom106gunma"
+            rel="noreferrer"
             target="_blank"
           >
             Github
