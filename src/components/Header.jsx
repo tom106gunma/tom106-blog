@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -16,7 +17,7 @@ export default function Header() {
             rel="noreferrer"
             target="_blank"
           >
-            Twitter
+            <Image src="/images/twitter.svg" height="30" width="30" />
           </a>
           <a
             className="mr-5 hover:text-gray-900"
@@ -24,7 +25,7 @@ export default function Header() {
             rel="noreferrer"
             target="_blank"
           >
-            Github
+            <Image src="/images/github.svg" height="30" width="30" />
           </a>
         </nav>
       </div>
